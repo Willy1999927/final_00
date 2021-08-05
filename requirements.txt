@@ -1,0 +1,4 @@
+Flask
+Flask_Cors
+gunicorn
+scikit-learn
