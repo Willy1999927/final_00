@@ -10,10 +10,6 @@ import numpy as np
 app=Flask(__name__)
 CORS(app)
     
-@app.route('/')
-def index():
-    return 'hello!'
-    
 @app.route('/predict',methods=['POST'])
 def predict():
     faceProto = "model/opencv_face_detector.pbtxt"
