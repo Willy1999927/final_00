@@ -2,7 +2,7 @@ Flask
 Flask_Cors
 gunicorn
 scikit-learn
-PIL
+Pillow
 cv2
 io
 numpy
