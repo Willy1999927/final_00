@@ -4,5 +4,4 @@ gunicorn
 scikit-learn
 Pillow
 opencv-python
-io
 numpy
