@@ -3,6 +3,6 @@ Flask_Cors
 gunicorn
 scikit-learn
 Pillow
-cv2
+opencv-python
 io
 numpy
