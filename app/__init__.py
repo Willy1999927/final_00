@@ -125,9 +125,9 @@ def predict(file_stream):
         r = {'number' : bbox,'gender': gender, 'age': age}
         data['predictions'].append(r)
     data['success'] = True
-    label = "{},{}".format(gender, age)
-    cv.putText(frameFace, label, (bbox[0], bbox[1]-10), cv.FONT_HERSHEY_SIMPLEX, 0.8, (0, 255, 255), 2, cv.LINE_AA)
-    cv.imwrite('static/picture/output.jpg', frameFace)
+    #label = "{},{}".format(gender, age)
+    #cv.putText(frameFace, label, (bbox[0], bbox[1]-10), cv.FONT_HERSHEY_SIMPLEX, 0.8, (0, 255, 255), 2, cv.LINE_AA)
+    #cv.imwrite('static/picture/output.jpg', frameFace)
 
     return jsonify(data)
 
