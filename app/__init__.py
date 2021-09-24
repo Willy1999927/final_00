@@ -124,7 +124,6 @@ def predict(file_stream):
         r = {'number' : bbox,'gender': gender, 'age': age}
         data['predictions'].append(r)
     data['success'] = True
-    label = "{},{}".format(gender, age)
 
     return jsonify(data)
 
