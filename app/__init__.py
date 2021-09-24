@@ -73,14 +73,14 @@ def upload_image():
 
 
 def predict(file_stream):
-    faceProto = "model/opencv_face_detector.pbtxt"
-    faceModel = "model/opencv_face_detector_uint8.pb"
+    faceProto = "app/model/opencv_face_detector.pbtxt"
+    faceModel = "app/model/opencv_face_detector_uint8.pb"
 
-    ageProto = "model/age_deploy.prototxt"
-    ageModel = "model/age_net.caffemodel"
+    ageProto = "app/model/age_deploy.prototxt"
+    ageModel = "app/model/age_net.caffemodel"
 
-    genderProto = "model/gender_deploy.prototxt"
-    genderModel = "model/gender_net.caffemodel"
+    genderProto = "app/model/gender_deploy.prototxt"
+    genderModel = "app/model/gender_net.caffemodel"
     MODEL_MEAN_VALUES = (78.4263377603, 87.7689143744, 114.895847746)
     ageList = ['(0-2)', '(4-6)', '(8-12)', '(15-20)', '(25-32)', '(38-43)', '(48-53)', '(60-100)']
     genderList = ['Male', 'Female']
