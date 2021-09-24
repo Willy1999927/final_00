@@ -1,11 +1,12 @@
-from flask import Flask,request,jsonify
+from flask import Flask,request,jsonify,redirect
 from flask_cors import CORS
 from io import BytesIO 
 
-import PIL.Image
 import time
 import cv2 as cv
+import PIL.Image
 import numpy as np
+
 
 ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg', 'gif'}
 
