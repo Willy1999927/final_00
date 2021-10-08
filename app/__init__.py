@@ -91,7 +91,7 @@ def predict(file_stream):
     
     # initialize the data dictionary that will be returned from the
     # view
-    data = {'success': False}
+    data = {'success': False,'face':True}
     print('request')
     # ensure an image was properly uploaded to our endpoint
     # 從 flask request 中讀取圖片（byte str）
@@ -105,6 +105,7 @@ def predict(file_stream):
     frameFace, bboxes = getFaceBox(faceNet, image)
     if not bboxes:
         print("No face Detected, Checking next frame")
+        data['face'] = False
 
     for bbox in bboxes:
         face = image[max(0,bbox[1]-padding):min(bbox[3]+padding,image.shape[0]-1),max(0,bbox[0]-padding):min(bbox[2]+padding, image.shape[1]-1)]
